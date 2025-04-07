@@ -23,7 +23,7 @@
 14. [AOP 적용](#AOP-적용)
 
 ---
-## <span style=color:#b48ead>일반적인 웹 애플리케이션 계층 구조</span>
+<h2 style=color:#b48ead>일반적인 웹 애플리케이션 계층 구조</h2>
 
 <img src="./img/WebHierarchy.png" width=480 alt="일반적인 웹 어플리케이션 계층 구조">
 
