@@ -20,13 +20,13 @@ https://start.spring.io/ 해당 주소에서 Spring boot 를 생성한다.
 
 <img src="./img/Springinitializr.png" width=380 alt="스프링 생성">
 
-<span style="color:rgb(255, 0, 0)">Group</span> : 보통 회사 도메인 <br>
-<span style="color:rgb(255, 0, 0)">Artifact</span> : 빌드된 결과물 (프로젝트 명)
+<span style="color:red">Group</span> : 보통 회사 도메인 <br>
+<span style="color:red">Artifact</span> : 빌드된 결과물 (프로젝트 명)
 
 <img src="./img/SpringBootLibrary.png" width=380 alt="스프링 부트 시작 라이브러리">
 
-라이브러리 추가 부분이고 웹을 사용할거니 <span style="color:rgb(255, 0, 0)">Spring Web </span>추가 <br>
-HTML에서 사용할 템플릿 엔진인 <span style="color:rgb(255, 0, 0)">Thymeleaf </span>사용
+라이브러리 추가 부분이고 웹을 사용할거니 <span style="color:red">Spring Web </span>추가 <br>
+HTML에서 사용할 템플릿 엔진인 <span style="color:red">Thymeleaf </span>사용
 
 ---
 
@@ -64,7 +64,7 @@ tasks.named('test') {
 }
 ```
 
-<span style="color:rgb(255, 0, 0)">dependencies</span>를 통해 우리가 다운로드한 웹서버, Thymeleaf를 사용할수있게 <span style="color:rgb(255, 0, 0)">의존성 추가</span>
+<span style="color:red">dependencies</span> 를 통해 우리가 다운로드한 웹서버, Thymeleaf를 사용할수있게 <span style="color:red">의존성 추가</span>
 
 ---
 
@@ -72,7 +72,7 @@ tasks.named('test') {
 
 <img src="./img/TomcatServer.png" width=800 alt="Tomcat 서버 실행">
 
-<span style="color:rgb(0, 176, 80)">Tomcat을 통해 http 8080 포트에 실행</span>시켰다는 의미가뜬다.<br>
+<span style="color:#00b050">Tomcat을 통해 http 8080 포트에 실행</span>시켰다는 의미가뜬다.<br>
 http://localhost:8080/ 해당 주소로 실행이 된다.
 <br>
 
@@ -146,7 +146,7 @@ model를 통해 html에 존재하는 thymeleaf 에 해당되는 데이터를 넣
 
 ### TMI
 
-참고로 <span style="color:rgb(255, 0, 0)">spring-boot-devtools</span> 를 통해 서버 재시작없이 html 새로고침으로 수정가능
+참고로 <span style="color:red">spring-boot-devtools</span> 를 통해 서버 재시작없이 html 새로고침으로 수정가능
 
 의존성 추가하고 2가지 설정더해야된다.
 
@@ -188,8 +188,8 @@ gradlew clean build  -> cd build -> cd libs -> java -jar xxx.jar
 
 우선순위 Controller > static 순이다.
 
-웹 브라우저에서 요청이들어오면 스프링 컨테이너에 있는 <span style="color:rgb(255, 0, 0)">@Controller</span>에서 먼저 찾아본다 <br>
-이후에 없으면<span style="color:rgb(255, 0, 0)"> static </span>안에 해당 html이 있으면 반환해준다.
+웹 브라우저에서 요청이들어오면 스프링 컨테이너에 있는 <span style="color:red">@Controller</span>에서 먼저 찾아본다 <br>
+이후에 없으면<span style="color:red"> static </span>안에 해당 html이 있으면 반환해준다.
 
 <img src="./img/SpringStatic.png" width=480 alt="정적 컨텐츠">
 
@@ -219,7 +219,7 @@ public String helloMvc(@RequestParam(value = "name", required = false) String na
 }
 ```
 
-@RequestParam 은 기본적으로<span style="color:rgb(255, 0, 0)"> required는 true</span>이기에 <span style="color:rgb(255, 0, 0)">url에 xxx?name=value 값을 넘겨줘야된다.</span>
+@RequestParam 은 기본적으로<span style="color:red"> required는 true</span>이기에 <span style="color:#b48ead">url에 xxx?name=value 값을 넘겨줘야된다.</span>
 
 <img src="./img/MVCThymeleaf.png" width=480 alt="MVC, 템플릿 엔진">
 
